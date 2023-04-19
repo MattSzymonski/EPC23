@@ -1,0 +1,11 @@
+{
+    "hpath": "$EPC_PATH",
+    "load_package_once": true,
+    "enable": true,
+    "version": "19.5",
+    "env": [
+        {
+            "EPC_PATH": "C:/Main/Houdini/EPC23"
+        }
+    ]
+}
