@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+    <menu>
+        <subMenu id="pipelinecourse">
+            <label>Pipeline Course</label>
+
+            <!-- Script Item # 1 -->
+
+            <scriptItem id="h.pipelinecourse_test1">
+                <label>Some Cool Label</label>
+                <scriptCode>
+                    <![CDATA[
+from imp import reload
+reload(EPCTest)
+EPC.test()
+]]>
+                </scriptCode>
+            </scriptItem>
+
+            <!-- Script Item # 2 -->
+
+            <scriptItem id="h.pipelinecourse_test2">
+                <label>Analyze this code with ChatGPT</label>
+                <scriptCode>
+                    <![CDATA[
+from epc_workshop import EPCTest
+parm = kwargs["parms"][0]
+prompt= parm.rawValue()
+code = EPCTest.read_text_from_parameter_and_generate_gpt_code_from_prompt(prompt)
+parm.set(code)
+]]>
+                </scriptCode>
+            </scriptItem>
+
+            <!-- Script Item # 3 -->
+
+            <scriptItem id="h.pipelinecourse_test3">
+                <label>Generate code using ChatGPT</label>
+                <scriptCode>
+                    <![CDATA[
+from epc_workshop import EPCTest
+parm = kwargs["parms"][0]
+prompt= parm.rawValue()
+code = EPCTest.read_text_from_parameter_and_generate_gpt_code_from_prompt(prompt)
+parm.set(code)
+]]>
+                </scriptCode>
+            </scriptItem>
+
+        </subMenu>
+    </menu>
+</menuDocument>
